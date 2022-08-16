@@ -115,8 +115,8 @@ typedef struct _CrtMemBlockHeader
     struct _CrtMemBlockHeader *pBlockHeaderPrev;
     char *szFileName;    // File name
     int nLine;           // Line number
-    size_t nDataSize;    // Size of user block
     int nBlockUse;       // Type of block
+    size_t nDataSize;    // Size of user block
     long lRequest;       // Allocation number
 // Buffer just before (lower than) the user's memory:
     unsigned char gap[nNoMansLandSize];
